@@ -15,6 +15,7 @@
 /dev/block/platform/soc/1d84000\.ufshc/by-name/utagsBackup      u:object_r:vendor_utags_block_device:s0
 
 # Partition Mountpoints
+/fsg                                                    u:object_r:fsg_file:s0
 /(vendor|system/vendor)/fsg                             u:object_r:fsg_file:s0
 /(vendor|system/vendor)/super_fsg                       u:object_r:fsg_file:s0
 /(vendor|system/vendor)/super_modem                     u:object_r:firmware_file:s0
@@ -75,9 +76,6 @@
 # Lights
 /(vendor|system/vendor)/bin/hw/android\.hardware\.lights-service\.berlna                                         u:object_r:hal_light_default_exec:s0
 /(vendor|system/vendor)/bin/hw/android\.hardware\.lights-service\.xpeng                                          u:object_r:hal_light_default_exec:s0
-
-# LiveDisplay
-/(vendor|system/vendor)/bin/hw/vendor\.lineage\.livedisplay@2\.1-service\.motorola_lahaina    u:object_r:hal_lineage_livedisplay_qti_exec:s0
 
 # Motobox
 /(vendor|system/vendor)/bin/motobox                     u:object_r:vendor_motobox_exec:s0
